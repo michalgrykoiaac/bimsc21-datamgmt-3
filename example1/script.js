@@ -113,7 +113,7 @@ async function compute () {
     booleanButton.disabled = true
 
     // local 
-    RhinoCompute.url = 'http://localhost:8081/' // Rhino.Compute server url
+    RhinoCompute.url = 'http://localhost:5000/' // Rhino.Compute server url
 
     // remote
     //RhinoCompute.url = 'https://macad2021.compute.rhino3d.com/'
