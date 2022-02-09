@@ -5,7 +5,9 @@ Examples for Lecture 3
 These examples introduce how to use RhinoCompute as a remote geometry calculation service.
 
 - [Example 1](example1): Boolean Union with RhinoCompute
-- [Example 2](example2): Remote Solving GH definitions
+- [Example 2](example2): Local Solving GH definitions
+- [Example 3](example3): Local Solving GH definitions with plugin
+
 
 ## References
 
