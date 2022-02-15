@@ -1,0 +1,175 @@
+
+        @font-face{
+          font-family: "metropolis";
+          src: url(fonts/metropolis/Metropolis-Regular.woff);
+          font-style: normal;
+          font-weight: 100;
+        }
+        
+        
+        
+        body, html{ 
+          height: 100vh;
+          background: radial-gradient(#f0f0f0, #dfdfdf);
+          
+       }
+        
+        
+        body {
+            margin: 0;
+            font-family: metropolis;
+           font-size: 10px;
+           overflow: hidden;
+           
+           
+          }
+      
+     .data{
+      font-family: metropolis;
+      font-size: 12px;
+      font-style: oblique;
+      margin: 5px 0px;
+      
+     }
+
+    
+   #overlay div h1 {
+      margin: 5px;
+      display: inline;
+      /*position: relative;*/
+      align-items: center;
+      /* font-family: 'Courier New', Courier, monospace; 'Permanent Marker'*/
+      font-family: metropolis;
+      font-size: 30px;
+      font-style: normal;
+      color: rgba(10, 10, 10, 0.9);
+      
+    }
+
+
+    h3 {
+      margin: 10;
+      font-family: metropolis;
+      font-size: 12px;
+      font-style: normal;
+      color: black
+    }
+
+
+
+    input[type=range] {
+      width: 100%;
+    }
+
+    #container {
+      position: relative;
+     
+    }
+
+    #container canvas,
+    #overlay {
+      position: absolute;
+      
+      
+    }
+
+    
+
+    /*///////////////////////////////////////////////////////////////////////////*/
+    #overlay {
+      z-index: 1;
+      width: 250px;
+     /* height: 100vw;*/
+      background-color: rgba(230, 230, 230, 0);
+      
+      
+    }
+
+    h3{
+      padding: 0px 0px;
+      margin: 0px;
+    }
+
+    #overlay div {
+      padding: 5px 5px;
+      
+      
+    }
+
+    .sliders {
+      margin: 20px 5px;
+      font-family: metropolis;
+      /*border-color: black;
+      border-width: 1px;
+      border-style: solid;*/
+      background-color: rgba(255, 255, 255, 0.849);
+      
+      
+      
+      
+    }
+
+    .split {
+      height: 100%;
+      width: 267px;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      overflow: hidden;
+      
+      
+    }
+
+    .left {
+      left: 0;
+      overflow:scroll;
+    }
+
+    .right {
+      right: 0;
+      
+    }
+
+    .getmodel {
+      position: relative;
+      background-color: rgb(115, 156, 196, 0.5);
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 15px;
+      top: 50%;
+      left: 20%;
+    }
+
+    .getmodel:hover {
+      background-color: rgb(115, 156, 196);
+      border: solid 2px black;
+    }
+
+    /*///////////////////////////////////////////////////////////////////////////*/
+    #loader {
+      border: 5px solid #f3f3f3;
+      /* Light grey */
+      border-top: 5px solid #3d3d3d;
+      /* Grey */
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      animation: spin 1s linear infinite;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      z-index: 2;
+    }
+
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
